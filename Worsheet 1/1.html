@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 4 PRIMEROS EJERCICIOS -->
+    <h1 class="intro">Probando JQUERY</h1>
+    <p class="intro">Mola un monton JQUERY</p>
+    <p>Que guay</p>
+    <input class="borrar" type="button" value="Borrar Todo">
+
+    <!-- 5 EJERCICIO -->
+    <br><br>
+    Lista 1:
+    <ol>
+        <li>Tortilla</li>
+        <li>Jamon</li>
+        <li>Queso</li>
+    </ol>
+
+    <br><br>
+    Lista 2:
+    <ul>
+        <li>Coca Cola</li>
+        <li>Leche</li>
+        <li>Té</li>
+    </ul>
+
+    <!-- JQUERY -->
+    <script>
+        /*Primero y segundo ejercicio*/
+        $(".borrar").click(function (event) {
+            $("h1").hide();
+            $("p").hide();
+            $(".borrar").hide();
+            /*En este caso como queremos que desaparezca el boton y 
+            por lo tanto el body se queda vacio empleo el * para que
+            oculte todo*/
+            $("*").hide();
+        });
+
+        /*Tercer Ejercicio*/
+        $(".borrar").click(function (event) {
+            $(".intro").hide();
+        });
+
+        /*Cuarto ejercicio */
+        $(".borrar").click(function (event) {
+            $("p.intro").hide();
+        });
+
+        /*Quinto ejercicio*/
+        $("ol li").first().click(function(event){
+            $("ol li").first().hide();
+        });
+
+        /*Sexto ejercicio */
+        $("ul li").first().click(function(event){
+            $("ul li").first().hide();
+        });
+
+    </script>
+
+</body>
+
+</html>
