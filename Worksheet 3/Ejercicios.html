@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<title>Document</title>
+	</head>
+
+	<body>
+		<!-- Ejercicio 1 -->
+		<table>
+			<tr class="red">
+				<td>Celda 1</td>
+
+				<td>Celda 2</td>
+
+				<td>Celda 3</td>
+			</tr>
+
+			<tr class="red">
+				<td>Celda 4</td>
+
+				<td>Celda 5</td>
+
+				<td>Celda 6</td>
+			</tr>
+
+			<tr class="red">
+				<td>Celda 7</td>
+
+				<td>Celda 8</td>
+
+				<td>Celda 9</td>
+			</tr>
+
+			<tr class="blue">
+				<td>Celda 10</td>
+
+				<td>Celda 11</td>
+
+				<td>Celda 12</td>
+			</tr>
+
+			<tr class="blue">
+				<td>Celda 13</td>
+
+				<td>Celda 14</td>
+
+				<td>Celda 15</td>
+			</tr>
+		</table>
+
+		<!-- Ejercicio 2 -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas
+			pulvinar mi placerat suscipit. Nunc aliquam commodo magna et ultricies. Ut
+			auctor at est at pellentesque. Aenean pulvinar vel felis ut efficitur.
+			Phasellus vel tortor eu tortor gravida bibendum. Nulla congue ut nibh eu
+			consectetur. In convallis lectus lorem, sed condimentum libero semper a.
+			Etiam auctor tellus in elit hendrerit, in lacinia tortor commodo. Morbi
+			aliquet eget diam vitae laoreet. Fusce egestas ultrices ligula, non
+			pellentesque lorem vehicula sed. Pellentesque id velit ut tortor tempus
+			euismod. Nullam felis tortor, lobortis id iaculis ut, malesuada eu ligula.
+			Cras sed ullamcorper risus, a auctor mauris. Ut auctor, arcu sed lacinia
+			auctor, ligula ex pulvinar leo, ut efficitur lectus ipsum vitae ex.
+			Vestibulum ullamcorper velit quis gravida posuere. Vestibulum malesuada
+			libero id diam efficitur, id dignissim ante bibendum.
+		</p>
+
+		<p>
+			Aliquam semper volutpat pellentesque. Fusce vestibulum nisi quis nulla
+			convallis lacinia id quis risus. Mauris auctor lobortis diam porttitor.
+			Proin sagittis nisl nunc, iaculis ullamcorper mi ullamcorper sed. In nunc
+			magna, vestibulum in est in, aliquet volutpat nisi. Nam a placerat ligula.
+			Nunc augue lectus, finibus et eros convallis, eleifend tincidunt metus.
+		</p>
+
+		<p>
+			Aliquam erat volutpat. Nullam faucibus risus porttitor quam volutpat
+			viverra. Fusce volutpat, lacus non ultrices eleifend, turpis risus
+			vestibulum elit, in porta tortor neque nec mi. Aenean lobortis sodales
+			erat, ac bibendum odio. Phasellus iaculis ex dolor, quis mollis lectus
+			condimentum eu. Mauris mollis lorem id rutrum scelerisque. Duis quam
+			metus, porttitor quis consequat varius, congue vel nunc. Interdum et
+			malesuada fames ac ante ipsum primis in faucibus.
+		</p>
+
+		<!-- Ejercicio 3 -->
+
+		<table>
+			<tr class="red">
+				<td></td>
+
+				<td>Celda 2</td>
+
+				<td></td>
+			</tr>
+
+			<tr class="red">
+				<td>Celda 4</td>
+
+				<td></td>
+
+				<td>Celda 6</td>
+			</tr>
+
+			<tr class="red">
+				<td></td>
+
+				<td>Celda 8</td>
+
+				<td></td>
+			</tr>
+
+			<tr class="blue">
+				<td>Celda 10</td>
+
+				<td></td>
+
+				<td>Celda 12</td>
+			</tr>
+
+			<tr class="blue">
+				<td></td>
+
+				<td>Celda 14</td>
+
+				<td></td>
+			</tr>
+		</table>
+
+		<!-- Ejercicio 5 -->
+		<div>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting
+				industry. Lorem Ipsum has been the industry's standard dummy text ever
+				since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book. It has survived not only five
+				centuries, but also the leap into electronic typesetting, remaining
+				essentially unchanged. It was popularised in the 1960s with the release
+				of Letraset sheets containing Lorem Ipsum passages, and more recently
+				with desktop publishing software like Aldus PageMaker including versions
+				of Lorem Ipsum.
+			</p>
+			<p>
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It
+				has roots in a piece of classical Latin literature from 45 BC, making it
+				over 2000 years old. Richard McClintock, a Latin professor at
+				Hampden-Sydney College in Virginia, looked up one of the more obscure
+				Latin words, consectetur, from a Lorem Ipsum passage, and going through
+				the cites of the word in classical literature, discovered the
+				undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+				of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+				Cicero, written in 45 BC. This book is a treatise on the theory of
+				ethics, very popular during the Renaissance. The first line of Lorem
+				Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+				1.10.32.
+			</p>
+		</div>
+
+		<!-- JQUERY -->
+		<script>
+			//Ejercicio 1
+			$(".red").css("background-color", "red");
+			$(".blue").css("background-color", "blue");
+
+			//Ejercicio 2
+			$("p:contains('eu')").css("background-color", "red");
+
+			//Ejercicio 3
+			$("td:empty").css("background-color", "yellow");
+
+			//Ejercicio 5
+			$(function() {
+				$("div p").click(function() {
+					$("div p").css("background-color", "pink");
+				});
+			});
+		</script>
+	</body>
+</html>
